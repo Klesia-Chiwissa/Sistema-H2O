@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+
+</head>
+<body>
+  <div class="box">
+    <h2>Cadastre-se preenchendo o formulário:</h2>
+    <form action="dbCadastroCliente.php"method="post">
+        <fieldset>
+            <legend><!--Cria titula dentro do formulario-->
+               Dados do Cliente
+            </legend>
+            <label for="id" class="form-label">ID:</label>
+            <input type="int" name="id" placeholder="Digite o id:"><br>
+            <br>
+
+            <label for="nome" class="form-label">Nome:</label>
+            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome"> <br>
+            <br>
+
+            <label for="apelido" class="form-label">Apelido:</label>
+            <input type="text" class="form-control" id="apelido" placeholder="Digite seu Apelido"><br>
+            <br>
+
+            <label for="datanas" class="form-label">Data_Nascimento:</label>
+            <input type="date" class="form-control" id="datanasc" placeholder="Digite a data de nascimeno"><br>
+            <br>
+
+            <label for="dataingresso" class="form-label">Data_Ingresso:</label>
+            <input type="date" class="form-control" id="dataingresso" placeholder="Digite a data_ingresso"><br>
+            <br>
+
+            <label for="genero">Genero: </label> <!-- para apresentacao do genero-->
+                <input type="radio" name="genero" id="generoM" >Mascululino 
+                <input type="radio" name="genero" id="generoF">Fermenino <br>   
+                <br>
+
+            <label for="email" class="form-label">Tipo_Documento:</label>
+            <select id="estado" class="form-select" placeholder="Digite a data_ingresso">
+            <option selected>Escolha</option>
+            <option>BI</option>
+            <option>Passaporte</option>
+            <option>Carta_Condução</option>
+            <option>Cartão_Eleitoral</option>
+            </select> <br>
+            <br>
+
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail"><br>
+            <br>
+
+            <label for="password" class="form-label">Senha:</label>
+            <input type="password" class="form-control" id="password" placeholder="Digite sua senha"><br>
+            <br>
+
+            <label for="cell" class="form-label">Telefone:</label>
+            <input type="text" class="form-control" id="cell" placeholder="Digite Telefone"><br>
+            <br>
+
+            <label for="nat" class="form-label">Naturalidade:</label>
+            <select id="nat" class="form-select" placeholder="Infome naturalidade">
+            <option selected>Escolha</option>
+            <option>Maputo Provincia</option>
+            <option>Maputo Cidade</option>
+            <option>Gaza</option>
+            <option>Inhambane</option>
+            <option>Sofala</option>
+            <option>Manica</option>
+            <option>Tete</option>
+            <option>Zambezia</option>
+            <option>Nampula</option>
+            <option>Cabo Delgado</option>
+            <option>Niassa</option>
+            </select><br>
+            <br>
+
+            <label for="nac" class="form-label">Nacionalidade:</label>
+            <select id="nac" class="form-select" placeholder="Infome a nacionalidade: ">
+            <option selected>Escolha</option>
+            <option>Mocambique</option>
+            <option>África do Sul</option>
+            <option>Angola</option>
+            <option>Estados unidos da America</option>
+            <option>Sofala</option>
+            <option>Manica</option>
+            <option>Tete</option>
+            <option>Zambezia</option>
+            <option>Nampula</option>
+            <option>Cabo Delgado</option>
+            <option>Niassa</option>
+            </select><br>
+            <br>
+
+            <label for="rua" class="form-label">Rua:</label>
+            <input type="text" class="form-control" id="rua" placeholder="Digite sua rua"><br>
+            <br>
+
+            <label for="numero" class="form-label">Número_Casa:</label>
+            <input type="text" class="form-control" id="numero" placeholder="Informe Nº Casa"><br>
+            <br>
+
+            <label for="bairro" class="form-label">Bairro:</label>
+            <input type="text" class="form-control" id="bairro" placeholder="Informe o bairro"><br>
+            <br>
+            
+            <label for="estado" class="form-label">Estado cível:</label>
+            <select id="estado" class="form-select" placeholder="Informe o estado civil">
+            <option selected>Escolha</option>
+            <option>Casado/a</option>
+            <option>Solteiro/a</option>
+            <option>viuvo/a</option>
+            </select><br>
+        
+            <br>
+    
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <button type="cancelar" class="btn btn-primary">Cancelar</button>
+        </fieldset>
+    </form>
+  </div>   
+</body>
+</html>
